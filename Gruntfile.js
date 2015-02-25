@@ -326,7 +326,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'views/{,*/}*.html',
+            'tests/{,*/}*.js',
             'images/{,*/}*.{webp}',
             'data/{,*/}*.*',
             'styles/fonts/{,*/}*.*'
@@ -413,8 +413,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'filerev',
-    'usemin',
-    'htmlmin'
+    'usemin'
   ]);
 
   grunt.registerTask('default', [

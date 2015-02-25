@@ -26,14 +26,17 @@
 
     function load() {
       var promise = $http.get('data/ad.json')
-        .then(function (response) {
-          return response.data;
-        })
-        .catch(function (err) {
-          $log.error("Failed to load ad data.", err);
-        });
+        .then(loadSuccess)
+        .catch(loadFailed);
       return promise;
     }
 
+    function loadSuccess(response) {
+      return response.data;
+    }
+
+    function loadFailed(err) {
+      $log.error('Failed to load ad data.', err);
+    }
   }
 })();

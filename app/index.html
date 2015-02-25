@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body ng-app="kleinApp" ng-cloak>
+<body data-ng-app="kleinApp" data-ng-cloak>
 <div class="container">
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -30,16 +30,18 @@
   </div>
 
   <div class="article">
-    <div ng-controller="MainCtrl" ng-show="!!ad">
+    <div data-ng-controller="MainCtrl" data-ng-show="!!ad">
 
       <h1 class="title">{{ad.title}}</h1>
 
       <div class="price">{{ad.price}}</div>
 
-      <div class="photo"><img ng-src="data/images/{{currentImage.full}}"/></div>
+      <div class="photo"><img ng-src="data/images/{{currentImage.full}}" alt="big photo"/></div>
 
       <ul class="gallery">
-        <li ng-repeat="image in ad.images"><a href ng-click="showImage($index)"><img ng-src="data/images/{{image.thumb}}"/></a></li>
+        <li data-ng-repeat="image in ad.images"><a href="" data-ng-click="showImage($index)">
+          <img alt="{{image.thumb}}" data-ng-src="data/images/{{image.thumb}}"/>
+        </a></li>
       </ul>
 
       <div class="details">
@@ -58,7 +60,7 @@
 
       <div class="description">
         <h2>Beschreibung</h2>
-        <p ng-bind-html="ad.description"></p>
+        <p data-ng-bind-html="ad.description"></p>
       </div>
 
     </div>
