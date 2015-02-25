@@ -6,7 +6,8 @@
    * @name kleinApp.AdService
    * @description
    * # AdService
-   * Loads ad data and provide it to the app.
+   *
+   * Service, responsible for ad loading.
    */
 
   angular

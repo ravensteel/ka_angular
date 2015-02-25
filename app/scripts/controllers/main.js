@@ -6,7 +6,9 @@
    * @name kleinApp.controller:MainCtrl
    * @description
    * # MainCtrl
-   * Controller of the appApp
+   *
+   * Main controller of the app. Loads an ad via service, provides it to the view,
+   * handles gallery image click/mouseover.
    */
   angular
     .module('kleinApp')

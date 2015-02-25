@@ -13,6 +13,10 @@
   padding: 0.2em 0;
 }
 body {
+  height: 100%;
+  overflow-y: scroll;
+}
+body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
@@ -48,6 +52,7 @@ h2 {
 }
 .container .article .photo img {
   max-width: 100%;
+  height: auto;
   -webkit-border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 4px;
@@ -62,8 +67,9 @@ h2 {
 }
 .container .article ul.gallery li {
   display: inline-block;
-  max-width: 100px;
-  margin-right: 10px;
+  max-width: 20.13422818791946%;
+  margin-right: 6.442953020134228%;
+  min-width: 64px;
 }
 .container .article ul.gallery li img {
   border: none;
@@ -112,10 +118,6 @@ h2 {
   }
   .container .header img {
     max-width: 100%;
-  }
-  .container .article ul.gallery li {
-    max-width: 150px;
-    margin-right: 48px;
   }
   .container .article ul.attributes li.label {
     width: 30%;
