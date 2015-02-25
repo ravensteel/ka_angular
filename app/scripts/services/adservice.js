@@ -27,7 +27,6 @@
     function load() {
       var promise = $http.get('data/ad.json')
         .then(function (response) {
-          console.log(arguments);
           return response.data;
         })
         .catch(function (err) {

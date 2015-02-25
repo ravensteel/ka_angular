@@ -107,7 +107,7 @@ h2 {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 744px;
+    max-width: 745px;
     /* Space out the masthead */
   }
   .container .header img {
